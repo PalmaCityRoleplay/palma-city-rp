@@ -1,0 +1,45 @@
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/0dfdec2c7e.js"></script>
+
+<title>Kontakt</title>
+
+<div class="logo">Palma City Roleplay</div>
+<img class="backguy" style="bottom: 0vw; left: 67vw; top: unset;" src="img/pic2.png">
+
+<ul class="menu">
+    <li class="menuitem" onclick="openLink('start')">Pocetna</li>
+    <li class="menuitem" onclick="openLink('about')">O nama</li>
+    <li class="menuitem" onclick="openLink('rules')">Pravila</li>
+    <li class="menuitem" onclick="openLink('contact')" style="border-color: #3ca918">Kontakt</li>
+	</ul>
+
+<div class="maintext">
+
+    <form method="post" action="php/contact.php">
+
+        <p>Ime*</p>
+        <p><input type="text" name="username" required></p>
+
+        <p>Subjekt</p>
+        <p><input type="text" name="subject"></p>
+
+        <p>E-Mail-Adresa*</p>
+        <p><input type="email" name="email" required></p>
+
+        <p>Poruka*</p>
+        <p><textarea name="body" required></textarea ></p >
+    
+        <p >
+        <input type="submit" name="submit" value="Submit" >
+        </p >
+    
+    </form >
+    
+</div>
+</html>
+<!--Copyright (c) 2020 TechKings.de-->
